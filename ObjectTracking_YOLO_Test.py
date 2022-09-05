@@ -5,15 +5,14 @@ import time
 
 imExport = False
 class Args:
-	def __init__(self,a0,a1,a2,a3):
-		self.image = a0
-		self.config = a1
-		self.weights = a2
-		self.classes = a3
+	def __init__(self,a0,a1,a2):
+		self.config = a0
+		self.weights = a1
+		self.classes = a2
+		
 dirPath_args = r"PATH TO DIRECTORY OF SUPPORT FILES/"
 dirPath_exportFrames = r"PATH TO DIRECTORY FOR FRAME EXPORTS"
 args = Args(
-	"%s%s" % (dirPath_args,"ap1.jpeg"),
 	"%s%s" % (dirPath_args,"yolov3.cfg"),
 	"%s%s" % (dirPath_args,"yolov3.weights"),
 	"%s%s" % (dirPath_args,"yolov3.txt")
